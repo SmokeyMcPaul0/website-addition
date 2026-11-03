@@ -14,14 +14,18 @@ import About   from './pages/about';
 import Contact from './pages/contactsales';
 import Product from './pages/product';
 import Careers from './pages/careers';
+import Blog    from './pages/blog';
 import BlogCoffee from './pages/blog-coffee';
+import BlogPost from './pages/blogpost';
 import NotFound from './pages/notfound';
 
 const router = createBrowserRouter([
   { path: '/',        element: <Home /> },
   { path: '/product', element: <Product /> },
   { path: '/about',   element: <About /> },
+  { path: '/blog',   element: <Blog /> },
   { path: '/blog/solarola-coffee-vendors', element: <BlogCoffee /> },
+  { path: '/blog/:slug', element: <BlogPost /> },
   { path: '/contact', element: <Contact /> },
   { path: '/careers', element: <Careers /> },
   { path: '/Product', element: <Product /> },

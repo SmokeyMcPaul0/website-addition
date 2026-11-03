@@ -96,3 +96,85 @@
   border-radius: 18px;
   text-align: center;
 }
+
+/* ── Blog: additions for markdown posts (src/data/blogs.js) ── */
+.blog-card__subtitle {
+  margin-top: 10px;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.blog-article__title {
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  overflow-wrap: anywhere;
+}
+.blog-article__byline {
+  margin-top: 16px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--slate-100);
+  font-size: 0.9rem;
+  color: var(--slate-400);
+}
+.blog-article__head { margin-bottom: 36px; }
+
+.blog-preview-banner {
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background: #fff3cd;
+  border: 1px solid #ffe08a;
+  border-radius: var(--radius-md);
+  color: #664d03;
+  font-size: 0.9rem;
+}
+
+.blog-article__body { overflow-wrap: anywhere; }
+.blog-article__body h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 28px 0 10px;
+  color: var(--slate-900);
+}
+.blog-article__body ul,
+.blog-article__body ol { margin: 0 0 20px; padding-left: 24px; }
+.blog-article__body li { margin-bottom: 8px; }
+.blog-article__body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.blog-article__body a:hover { color: var(--green-700); }
+.blog-article__body a.btn { text-decoration: none; color: var(--white); }
+.blog-article__body hr {
+  border: none;
+  border-top: 1px solid var(--slate-100);
+  margin: 40px 0;
+}
+.blog-article__body strong { color: var(--slate-900); font-weight: 600; }
+
+.blog-table-wrap { overflow-x: auto; margin: 0 0 24px; }
+.blog-article__body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.blog-article__body th,
+.blog-article__body td {
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--slate-200);
+}
+.blog-article__body th {
+  background: var(--green-50);
+  color: var(--green-900);
+  font-weight: 600;
+}
+.blog-article__body tbody tr:nth-child(even) td { background: var(--slate-50); }
+
+@media (max-width: 600px) {
+  .blog-card { padding: 24px 22px; }
+  .blog-article__body { font-size: 1.03rem; }
+}
