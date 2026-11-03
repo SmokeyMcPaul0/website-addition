@@ -12,11 +12,11 @@
 
 const blogs = [
   {
-    // Existing hand-built page (src/pages/blog-coffee.js). Still template text - consider switching off.
+    // Existing hand-built page (src/pages/blog-coffee.js). Template text, so switched off for launch.
     slug: "solarola-coffee-vendors",
     title: "How SolarRola changes the game for portable coffee vendors",
     author: "Paul Marshall",
-    published: true,
+    published: false, // template text still - switch to true once the article is written
     date: "2026-06-15",
     category: "Field Story",
     excerpt:
